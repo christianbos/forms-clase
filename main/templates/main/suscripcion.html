@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+{% load staticfiles %}
+
+
+
+{% block content %}
+<form class="" action="." method="post">
+  {%csrf_token%}
+  {{form.as_p}}
+  <input type="submit" value="Suscribirme">
+</form>
+{% endblock content %}
